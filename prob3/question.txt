@@ -1,0 +1,9 @@
+Exercise 3 – Responding to a User Request
+Write a WEB application comprising of two parts. The page “CollectUserInput” provides
+three fields which enable the user to specify input for a random number experiment: the
+number of trials Ntrial, the minimum random number Nmin, and the maximum random
+number Nmax. By clicking the “Submit” button, the
+“EvaluateRandomNumberExperiment” page is requested. This WEB presents these
+numbers, performs an experiment where NTrial random numbers between Nmin and Nmax
+are drawn and lists the relative frequencies (how often this number was drawn in
+percent) for all the numbers between Nmin and Nmax.

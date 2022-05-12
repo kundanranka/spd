@@ -1,0 +1,13 @@
+a) Write a WEB page, which presents 75 random integer numbers from {0,1, …, 10} in a
+table with 5 columns and 28 rows as follows: the random numbers are listed in the first
+three columns, with the sum and the average of the random numbers of a particular row
+given in the last two columns. Headers for the five columns (“Trial 1”, “Trial 2”, “Trial 3”,
+“Horizontal Sum”, “Horizontal Average”) are printed in the upper row. Finally, the sum
+and average of the three columns are printed in the last two rows and the according
+headers (“Vertical Sum”, and “Vertical Average”) are given in fourth column.
+Try to make the table easy to read by, for example, limiting the number of displayed
+digits, using bold fonts, choosing appropriate font and background colors.
+b) Modify the created in exercise 2a) so that the random numbers only change on a
+new session
+HINT: on a new session, initialize Random() with the current time and save time; on an
+existing session, initialize Random() with time saved previously in the session scope.

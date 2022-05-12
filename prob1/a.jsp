@@ -11,7 +11,7 @@
         <br />
         <% int[] numbers={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; int[] sums={1, 4, 9, 16, 25, 36, 49, 64, 81, 100}; %>
             <% for(int i=0;i<=9;i++) { %>
-                <span style="color: <% if(i % 2 == 0) { %>lightgreen<% } else { %>red<% } %>;">
+                <span style="color: <% if(i % 2 == 0) { %>lightgreen<% } else {%>red<% } %>;">
                     <% for(int j=0;j<=i;j++) { %>
                         <%= numbers[j] %> <sup>2</sup>
                             <% if(j < i) { %>
