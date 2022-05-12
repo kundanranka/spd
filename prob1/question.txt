@@ -1,2 +1,14 @@
-Write a JSP Program /Document to accept and sort the list of names based on user
-choices (Ascending/Descending, Case Sensitive / Insensitive)
+a) Write a simple Web page that prints out a series of consecutive numbers by using a
+Java loop construction. The output could be for example:
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+b) Modify your first Web page (1a) such that it prints out the series of numbers given
+below using a Java loop:
+1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+c) Modify the web page further such that it prints in each line the sum of the squared
+numbers iterated through so far, as shown below:
+12 = 1
+12 + 22 = 1 + 4 = 5
+12 + 22 + 32 = 1 + 4 + 9 = 14
+... and so on
+d) In order to make the list printed out by the previous web page easier to read, change
+the font color every other line.

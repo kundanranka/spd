@@ -1,0 +1,6 @@
+a) Write a page “MiniAdd.jsp” that carries out simple additions of two numbers. The JSP
+should:
+1. present a form where the user can specify two numbers,
+2. contain a submit button that posts back to the same page (i.e. “miniadd.jsp”),
+3. show the result of the requested addition, and also
+4. show the sum of all the additions carried out by the user so far.

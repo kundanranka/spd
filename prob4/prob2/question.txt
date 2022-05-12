@@ -1,0 +1,29 @@
+Exercise 2- Address Management Application
+WriteaJSP based web application for address management, which allows to register and delete
+entries and to search for entries based on partial information given.
+a) Create the table "addresses" in the test database withastructure as follows
+
+b) WriteaJSP “Register.jsp", which providesaform to insertanew entry foraperson into the
+table, and another JSP “exRegister.jsp", which actually performs the required INSERT
+statement. UseaJavaBean “AddressBean" to check the validity ofarecord before inserting it
+into the database, i.e. check that at leastaforename is given (a surname might not always be
+accessible to you in the case of persons known only by their nickname), and also either the
+number ofastationary oramobile phone or an e-mail address was specified. In case of invalid
+information, redirect the request to "Register.jsp" and make sure that the user does not have to
+enter valid parts of the record again. Use the "AddressBean" bean to annotate those fields in the
+registration form, which caused the insertion of the record to fail, withareasonable error
+message. Ifanew record was successfully added to the table using “Register.jsp", redirect the
+request to the page “DeleteAddress.jsp", which you are going to write in the next subtask.
+
+c) Add JSPS "DeleteAddress.jsp" and "exDelete.jsp". The JSP "DeleteAddress.jsp" presentsa
+list of all entries each followed bya“Delete" button. The "Delete" button is linked to
+"exDelete.jsp", which carries out the deletion in the database table. Take care not to exchange
+more information than required between "DeleteAddress.jsp" and "exDelete.jsp".
+
+d) Ifanew record was successfully added to the table using "Register,jsp", redirect the
+request toapage "SearchAddress.jsp". This page offers another form where the user can specify
+partial information concerning arbitrary fields the records in the "addresses" table contain. Carry
+out the SELECT statement corresponding to the information given in "SearchAddress.jsp" ina
+JSP “exSearchAddress.jsp" and display the result in
+"SearchAddressResult.jsp". For selection of an address, combine the fields that specify the
+search in the way that seems suitable for you.

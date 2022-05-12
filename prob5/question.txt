@@ -1,0 +1,2 @@
+Write a JSP Program /Document to accept and sort the list of names based on user
+choices (Ascending/Descending, Case Sensitive / Insensitive)
