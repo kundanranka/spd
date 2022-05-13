@@ -14,7 +14,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-          
+
         </style>
     </head>
 
@@ -25,17 +25,26 @@
                     <center class="card-body">
                         <% Integer hitsCount = (Integer) application.getAttribute("hitCounter");
                             String name = request.getParameter("name");
-                            if(name == null){
+                            Integer newhit = (Integer) session.getAttribute(name);
+                            if (newhit == null) {
+                                newhit = 0;
+                            }
+                            if (name == null) {
                                 name = "Anynomous User";
                             }
                             if (hitsCount == null) {
-                                out.println("Welcome "+name+", you our the first visitor!");
+                                out.println("Welcome " + name + ", you our the first visitor!");
                                 hitsCount = 1;
                             } else {
                                 hitsCount += 1;
-                                out.println("Welcome "+name+", you are the " + hitsCount + " visitor");
+                                out.println("Welcome " + name + ", you are the " + hitsCount + " visitor");
                             }
-                            application.setAttribute("hitCounter", hitsCount);%>
+                            application.setAttribute("hitCounter", hitsCount);
+                            out.println("<br><br>");
+                            out.println("You have visted "+(newhit+1)+" times");
+                            session.setAttribute(name, newhit+1);
+                        %>
+
                     </center>
                 </div>  
             </div>
