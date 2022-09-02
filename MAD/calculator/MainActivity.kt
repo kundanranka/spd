@@ -1,9 +1,9 @@
-package com.example.myapplication
-
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+
 import java.math.BigDecimal
 
 
@@ -22,6 +22,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setOnClickListener() {
+        val button0 = findViewById<Button>(R.id.button0);
+        val button1 = findViewById<Button>(R.id.button1);
+        val button2 = findViewById<Button>(R.id.button2);
+        val button3 = findViewById<Button>(R.id.button3);
+        val button4 = findViewById<Button>(R.id.button4);
+        val button5 = findViewById<Button>(R.id.button5);
+        val button6 = findViewById<Button>(R.id.button6);
+        val button7 = findViewById<Button>(R.id.button7);
+        val button8 = findViewById<Button>(R.id.button8);
+        val button9 = findViewById<Button>(R.id.button9);
+        val dotButton = findViewById<Button>(R.id.dotButton);
+        val acButton = findViewById<Button>(R.id.acButton);
+        val addButton = findViewById<Button>(R.id.addButton);
+        val subButton = findViewById<Button>(R.id.subButton);
+        val mulButton = findViewById<Button>(R.id.mulButton);
+        val divButton = findViewById<Button>(R.id.divButton);
+        val modButton = findViewById<Button>(R.id.modButton);
+        val equalButton = findViewById<Button>(R.id.equalButton);
         button0.setOnClickListener(this)
         button1.setOnClickListener(this)
         button2.setOnClickListener(this)
@@ -43,6 +61,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
+        val textView = findViewById<TextView>(R.id.textView);
 
         when (v.id) {
             R.id.button0 -> {
@@ -203,7 +222,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
                         "/" -> {
                             var result = (operand1.toDouble() / operand2.toDouble())
-                           /* var finalResult = result.toBigDecimal().setScale(1, RoundingMode.UP).toDouble()*/
+                            /* var finalResult = result.toBigDecimal().setScale(1, RoundingMode.UP).toDouble()*/
                             textView.text = result.toString()
 
                         }
