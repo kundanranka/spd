@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Fahrenheit Temp Below"
+        android:layout_margin="@dimen/cardview_default_radius"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/fahrenheit"
+        android:layout_width="30mm"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        ></EditText>
+
+    <Button
+        android:id="@+id/convert"
+        android:text="Convert"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+
+    <Button
+        android:id="@+id/view2"
+        android:text="Feed Emoji"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+
+</LinearLayout>
